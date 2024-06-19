@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+@font-face {
+  font-family: "Karla";
+  src: url(../../public/assets/fonts/Karla-VariableFont_wght.ttf) format(truetype);
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Karla";
+  src: url(../../public/assets/fonts/Karla-Italic-VariableFont_wght.ttf) format(truetype);
+  font-weight: 100 900;
+  font-display: swap;
+}
+.messageContainer {
+  padding: 1rem;
+  background-color: #2A4144;
+  row-gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 29rem;
+  height: auto;
+  border-radius: 0.75rem;
+}
+@media (max-width: 767px) {
+  .messageContainer {
+    width: 20.4375rem;
+  }
+}
+.messageContainer > .messageHeader {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+.messageContainer > .messageHeader > span {
+  font-size: clamp(1.125rem, 1.13vw, 1.13rem);
+  line-height: 150%;
+  color: #ffffff;
+}
+.messageContainer > p {
+  font-size: clamp(1rem, 1.05vw, 1.05rem);
+  line-height: 150%;
+  color: #E0F1E8;
+}/*# sourceMappingURL=styles.css.map */

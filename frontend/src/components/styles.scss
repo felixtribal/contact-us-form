@@ -1,0 +1,43 @@
+@import "../static/base";
+
+@mixin MessageContainer(){
+    padding: 1rem;
+    background-color: $grey900;
+    row-gap: 1rem;
+    @include flex(column);
+    width: 29rem;
+    height: auto;
+    border-radius: .75rem;
+
+    @media (max-width:767px) {
+        width: 20.4375rem;
+    }
+
+    > .messageHeader{
+        @include flex(row);
+        column-gap: .5rem;
+
+        > span{
+            @include fontSize18px();
+            line-height: 150%;
+            color: $white;
+        }
+    }
+    > p{
+        @include fontSize16px();
+        line-height: 150%;
+            color: $green200;
+    }
+}
+
+
+
+
+
+
+
+
+// including the correct mixins to correct selectors
+.messageContainer{
+    @include MessageContainer();
+}

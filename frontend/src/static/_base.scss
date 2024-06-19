@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+
+// font variable
+@font-face {
+    font-family: "Karla";
+    src: url(../../public/assets/fonts/Karla-VariableFont_wght.ttf) format(truetype);
+    font-weight: 100 900;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Karla";
+    src: url(../../public/assets/fonts/Karla-Italic-VariableFont_wght.ttf) format(truetype);
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+
+@mixin fontSize16px(){
+    font-size: clamp(1rem, 1.05vw, 1.05rem)
+}
+
+@mixin fontSize32px(){
+    font-size: clamp(2rem, 2.05vw, 2.05rem)
+}
+
+@mixin fontSize18px(){
+    font-size: clamp(1.125rem, 1.13vw, 1.13rem)
+}
+
+@mixin flex($direc){
+    display: flex;
+    flex-direction: $direc;
+}
+
+@mixin flexComp($direc){
+    display: flex;
+    flex-direction: $direc;
+    justify-content: center;
+    align-items: center;
+}
+    
+
+// color variable
+$grey900:#2A4144;
+$grey500:#86A2A5;
+$white:#ffffff;
+$green600:#0C7D69;
+$green200:#E0F1E8;
+$redErrors:#D73C3C;
